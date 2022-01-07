@@ -3,7 +3,7 @@ import Inputs from "./components/Inputs";
 import { useState } from "react";
 import AmortizationTable from "./components/AmortizationTable";
 import Box from "@mui/material/Box";
-// import Logo from "./components/Logo";
+import Logo from "./components/Logo";
 import rows from "./services/Rows";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           }}
         />
         <Box mt={2}>
-          {/* <Logo /> */}
+          <Logo />
         </Box>
       </Box>
       <Box mt={{ xs: 2, sm: 3, md: 4, lg: 5 }}>

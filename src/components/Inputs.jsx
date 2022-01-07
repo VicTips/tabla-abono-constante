@@ -24,7 +24,7 @@ function Inputs({ onChange }) {
         placeholder="$10,000,000"
         variant="outlined"
         label="Valor del crédito"
-        color="success"
+        color="warning"
         margin="normal"
         onChange={(e) => setLoan(e.target.value)}
         InputProps={{
@@ -37,7 +37,7 @@ function Inputs({ onChange }) {
         placeholder="12"
         variant="outlined"
         label="Número de periodos"
-        color="success"
+        color="warning"
         margin="normal"
         onChange={(e) => setNper(e.target.value)}
         InputProps={{
@@ -50,7 +50,7 @@ function Inputs({ onChange }) {
         placeholder="1.5%"
         variant="outlined"
         label="Tasa de interés"
-        color="success"
+        color="warning"
         margin="normal"
         onChange={(e) => setRate(e.target.value)}
         InputProps={{
