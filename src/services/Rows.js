@@ -1,4 +1,4 @@
-function Rows(loan, nper, rate) {
+function rows(loan, nper, rate) {
   let principal = "";
   if (loan && nper && rate !== "") {
     principal = loan / nper;
@@ -21,4 +21,4 @@ function Rows(loan, nper, rate) {
   return rows;
 }
 
-export default Rows;
+export default rows;
