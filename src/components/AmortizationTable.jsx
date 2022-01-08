@@ -36,23 +36,23 @@ function AmortizationTable( {rows} ) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {rows.map(({period, payment, interest, principal, balance}) => (
             <TableRow
-              key={row.period}
+              key={period}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell align="center">{row.period}</TableCell>
+              <TableCell align="center">{period}</TableCell>
               <TableCell align="center">
-                {formatter.format(row.payment)}
+                {formatter.format(payment)}
               </TableCell>
               <TableCell align="center">
-                {formatter.format(row.interest)}
+                {formatter.format(interest)}
               </TableCell>
               <TableCell align="center">
-                {formatter.format(row.principal)}
+                {formatter.format(principal)}
               </TableCell>
               <TableCell align="center">
-                {formatter.format(row.balance)}
+                {formatter.format(balance)}
               </TableCell>
             </TableRow>
           ))}
